@@ -148,7 +148,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" red="0.98272697210000004" green="0.87039681530000002" blue="0.48346404999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.4173467159" green="0.6606901288" blue="0.31071686739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="nextProfileButton:" destination="8je-RK-Ttu" eventType="touchUpInside" id="Gul-fe-2qa"/>
@@ -261,19 +261,101 @@
             <objects>
                 <viewController id="khG-R9-vv7" customClass="TermsConditionsViewController" customModule="ItzelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A0Q-Vb-wDX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2030"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wh-CJ-TfR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1942"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4d-t4-xqg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2030"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOB-g0-c2h">
+                                                <rect key="frame" x="132" y="1885" width="150" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="I Accept">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" red="0.94180494550000005" green="0.52702224249999996" blue="0.61213594680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="doneButton:" destination="khG-R9-vv7" eventType="touchUpInside" id="CcZ-Wp-4LX"/>
+                                                    <segue destination="Ppu-jT-597" kind="show" id="sH8-Sl-HWH"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1E-t4-qnH">
+                                                <rect key="frame" x="67" y="25" width="280" height="90"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TitanOne" family="Titan One" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="auW-gK-MAX">
+                                                <rect key="frame" x="27" y="130" width="360" height="1716"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <mutableString key="text">Welcome to Itzel Arronte's app! Before using our app, we ask that you carefully read and agree to the following terms and conditions:
+
+Use of the App:
+a. By using our app, you acknowledge and agree that our app is for informational and educational purposes only and does not constitute medical or professional advice.
+b. You understand that the use of our app does not create a therapist-patient.
+c. Our app does not replace professional treatment or advice from a licensed therapist or medical professional.
+d. You are responsible for your own well-being and use of the app. We are not responsible for any consequences that may result from your use of the app.
+Intellectual Property:
+a. All content and materials provided within our app, including but not limited to text, graphics, logos, images, and software, are owned by us or our licensors.
+b. You agree not to reproduce, distribute, modify, or create derivative works of any content or materials within the app without our prior written consent.
+User Conduct:
+a. You agree to use our app in compliance with all applicable laws and regulations.
+b. You agree not to use our app for any unlawful or prohibited purpose, including but not limited to spreading hate speech, infringing intellectual property rights, or sending spam.
+c. You agree not to interfere with or disrupt the operation of our app or any networks connected to it.
+Privacy:
+a. We respect your privacy and are committed to protecting your personal information. Please refer to our Privacy Policy for details on how we collect, use, and protect your information.
+Disclaimer of Warranties:
+a. Our app is provided "as is" without warranties of any kind, whether express or implied.
+b. We do not warrant that the app will meet your requirements or be uninterrupted, error-free, or secure.
+c. We are not responsible for the accuracy or completeness of any content or materials within the app.
+Limitation of Liability:
+a. To the extent permitted by law, we are not liable for any direct, indirect, incidental, special, or consequential damages arising from your use of the app or any content or materials within it.
+b. Our total liability to you for any claims arising from or related to the app is limited to the amount you paid to access the app.
+Governing Law:
+a. These terms and conditions shall be governed by and construed in accordance with the laws of Mexico.
+b. Any dispute arising from or related to the app shall be subject to the exclusive jurisdiction of the courts in Mexico.
+By using our app, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions. If you do not agree to these terms and conditions, you should not use our app.</mutableString>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18.5"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2030" id="qWl-B2-2mu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="h4d-t4-xqg" secondAttribute="bottom" id="7ge-U2-sdZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="h4d-t4-xqg" secondAttribute="trailing" id="JtG-yi-WhT"/>
+                                    <constraint firstItem="h4d-t4-xqg" firstAttribute="top" secondItem="8wh-CJ-TfR" secondAttribute="top" id="RK1-WK-chR"/>
+                                    <constraint firstItem="h4d-t4-xqg" firstAttribute="leading" secondItem="8wh-CJ-TfR" secondAttribute="leading" id="hlQ-wt-bae"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4pw-mF-kJO"/>
                         <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8wh-CJ-TfR" firstAttribute="trailing" secondItem="4pw-mF-kJO" secondAttribute="trailing" id="D6D-pq-LKk"/>
+                            <constraint firstItem="h4d-t4-xqg" firstAttribute="width" secondItem="A0Q-Vb-wDX" secondAttribute="width" id="L44-DN-MRd"/>
+                            <constraint firstItem="8wh-CJ-TfR" firstAttribute="leading" secondItem="4pw-mF-kJO" secondAttribute="leading" id="cN1-Qz-2NP"/>
+                            <constraint firstItem="8wh-CJ-TfR" firstAttribute="top" secondItem="4pw-mF-kJO" secondAttribute="top" id="hiq-lb-GAf"/>
+                            <constraint firstAttribute="bottom" secondItem="8wh-CJ-TfR" secondAttribute="bottom" id="jJu-zc-QcS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3xm-26-lai"/>
-                    <connections>
-                        <outlet property="termsConditionsText" destination="iFL-oJ-8HH" id="Ywa-3c-P84"/>
-                    </connections>
+                    <size key="freeformSize" width="414" height="2030"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5EZ-cF-xcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6988.4057971014499" y="424.55357142857139"/>
+            <point key="canvasLocation" x="6903" y="542"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="SNY-BW-YJg">
@@ -350,95 +432,246 @@
             <objects>
                 <viewController id="501-8t-IZY" customClass="HomepageViewController" customModule="ItzelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jff-nZ-ABf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4A-ya-Yyu">
-                                <rect key="frame" x="87" y="166" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="211-mN-evV">
-                                <rect key="frame" x="66" y="441" width="282" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cursos"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cursos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mi-hn-OEf">
-                                <rect key="frame" x="66" y="378" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Access all of my courses." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xdm-T1-aqv">
-                                <rect key="frame" x="66" y="399" width="240" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-B8-547">
-                                <rect key="frame" x="66" y="569" width="282" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cursos"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mantra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-vZ-w1W">
-                                <rect key="frame" x="66" y="506" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Check tha mantra of the day." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ggh-rp-jja">
-                                <rect key="frame" x="66" y="527" width="240" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-fv-yYW">
-                                <rect key="frame" x="66" y="697" width="282" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cursos"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nV-S6-NeS">
-                                <rect key="frame" x="66" y="634" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Access all of my material." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hoQ-5o-wgt">
-                                <rect key="frame" x="66" y="655" width="240" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ItzelArronte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH2-Tj-ysQ">
-                                <rect key="frame" x="133" y="86" width="148" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFd-Ay-o6g">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1112"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2A-a8-fWs">
+                                        <rect key="frame" x="0.0" y="58" width="414" height="1300"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Captura de Pantalla 2023-04-28 a la(s) 6.55.46 p.m." translatesAutoresizingMaskIntoConstraints="NO" id="3VR-qf-4IJ">
+                                                <rect key="frame" x="97" y="-9" width="220" height="104"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle_(transparent)-2" translatesAutoresizingMaskIntoConstraints="NO" id="JAo-zm-OfC">
+                                                <rect key="frame" x="76" y="112" width="263" height="147"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconos-de-redes-sociales-redondos-o-logos-conjunto-vectores-planos-colección-para-aplicaciones-y-sitios-web-vector-166025736" translatesAutoresizingMaskIntoConstraints="NO" id="tmh-pP-66H">
+                                                <rect key="frame" x="282" y="448" width="92" height="68"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconos-redes-sociales-diseno-ilustracion-vectorial_1035-13962" translatesAutoresizingMaskIntoConstraints="NO" id="HGT-RN-f7Y">
+                                                <rect key="frame" x="23" y="447" width="304" height="71"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FL-0z-lYX">
+                                                <rect key="frame" x="43" y="519" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TitanOne" family="Titan One" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Check my variety of courses" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="znw-tb-H5b">
+                                                <rect key="frame" x="43" y="557" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNR-Sw-Rjy">
+                                                <rect key="frame" x="43" y="595" width="328" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Courses">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" red="0.95766764879999999" green="0.72516781090000004" blue="0.26305150989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="courseButton:" destination="501-8t-IZY" eventType="touchUpInside" id="zNT-BE-CXe"/>
+                                                    <segue destination="mJc-Og-5gY" kind="show" id="Z0L-V2-wFh"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MW1-BG-NtP">
+                                                <rect key="frame" x="43" y="663" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TitanOne" family="Titan One" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Access specialized books and videos" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-XI-1s7">
+                                                <rect key="frame" x="43" y="701" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cds-VD-Xu6">
+                                                <rect key="frame" x="43" y="739" width="328" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Material">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" red="0.43713390829999998" green="0.66048043970000003" blue="0.86408132309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="materialButton:" destination="501-8t-IZY" eventType="touchUpInside" id="Q5Z-uf-J4B"/>
+                                                    <segue destination="fGi-0e-BeH" kind="show" id="ISg-HE-ayK"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mantra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqJ-6p-a9O">
+                                                <rect key="frame" x="43" y="807" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TitanOne" family="Titan One" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Check the daily mantra!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H4f-2d-Uei">
+                                                <rect key="frame" x="43" y="845" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIq-92-LvT">
+                                                <rect key="frame" x="43" y="883" width="328" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Mantra">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" red="0.94180494550000005" green="0.52702224249999996" blue="0.61213594680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="mantraButton:" destination="501-8t-IZY" eventType="touchUpInside" id="eSS-KV-zeX"/>
+                                                    <segue destination="LaE-Z4-I81" kind="show" id="lem-JF-vnQ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F12-Hy-Geq">
+                                                <rect key="frame" x="43" y="951" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TitanOne" family="Titan One" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Check my upcoming events" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wpK-87-mDn">
+                                                <rect key="frame" x="43" y="989" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xX-VW-X12">
+                                                <rect key="frame" x="43" y="1027" width="328" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Calendar">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" red="0.4173467159" green="0.6606901288" blue="0.31071686739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="calendarButton:" destination="501-8t-IZY" eventType="touchUpInside" id="hXo-Kg-WJ8"/>
+                                                    <segue destination="1yF-JC-tqX" kind="show" id="WsQ-6H-Wfy"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appointments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7J-sC-ohx">
+                                                <rect key="frame" x="43" y="1095" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TitanOne" family="Titan One" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Book a session with me" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EFy-eB-oeJ">
+                                                <rect key="frame" x="43" y="1133" width="328" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-S2-C5X">
+                                                <rect key="frame" x="43" y="1171" width="328" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Appointments">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" red="0.75512425149999995" green="0.54789308069999998" blue="0.98272697210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="appoinButton:" destination="501-8t-IZY" eventType="touchUpInside" id="smb-U7-Hl7"/>
+                                                    <segue destination="uUJ-ps-OZd" kind="show" id="P98-FO-jSF"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="svS-kY-r6r">
+                                                <rect key="frame" x="33" y="267" width="348" height="178"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <mutableString key="text">Hi there! My name is Itzel Arronte, and I'm an expert mentor in self-awareness and self-growth who's passionate about helping people live their best lives. I'm excited to introduce you my new app, which is designed to provide you with courses, mantras, and materials to help you achieve your goals and reach your full potential. Besides, with my app you can easily book sessions with me to help you overcome obstacles, build confidence, and create a more fulfilling life!</mutableString>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1300" id="cyI-FK-b3w"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="W2A-a8-fWs" secondAttribute="trailing" id="DpB-LU-DYv"/>
+                                    <constraint firstItem="W2A-a8-fWs" firstAttribute="top" secondItem="oFd-Ay-o6g" secondAttribute="top" id="EwJ-sy-B2l"/>
+                                    <constraint firstItem="W2A-a8-fWs" firstAttribute="leading" secondItem="oFd-Ay-o6g" secondAttribute="leading" id="SMe-qE-eUH"/>
+                                    <constraint firstAttribute="bottom" secondItem="W2A-a8-fWs" secondAttribute="bottom" id="Ygx-dT-aD1"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zwB-sI-DZz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oFd-Ay-o6g" firstAttribute="trailing" secondItem="zwB-sI-DZz" secondAttribute="trailing" id="0Ip-Ux-xKd"/>
+                            <constraint firstItem="oFd-Ay-o6g" firstAttribute="top" secondItem="zwB-sI-DZz" secondAttribute="top" id="AHm-lF-yHq"/>
+                            <constraint firstItem="W2A-a8-fWs" firstAttribute="width" secondItem="jff-nZ-ABf" secondAttribute="width" id="Mpj-mR-1HM"/>
+                            <constraint firstAttribute="bottom" secondItem="oFd-Ay-o6g" secondAttribute="bottom" id="cXf-Iy-uam"/>
+                            <constraint firstItem="oFd-Ay-o6g" firstAttribute="leading" secondItem="zwB-sI-DZz" secondAttribute="leading" id="tpr-ma-cF9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Homepage" image="house" catalog="system" selectedImage="house.fill" id="aLP-6T-zij"/>
                     <navigationItem key="navigationItem" id="MZd-hM-0V1"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="appoinText" destination="EFy-eB-oeJ" id="VEw-Yq-pFF"/>
+                        <outlet property="appoinTitle" destination="P7J-sC-ohx" id="3C7-HR-wa3"/>
+                        <outlet property="calendarText" destination="wpK-87-mDn" id="fBB-mF-TSV"/>
+                        <outlet property="calendarTitle" destination="F12-Hy-Geq" id="c26-sU-daZ"/>
+                        <outlet property="coursesText" destination="znw-tb-H5b" id="cRZ-T5-UWx"/>
+                        <outlet property="coursesTitle" destination="1FL-0z-lYX" id="s8p-dx-rRU"/>
+                        <outlet property="icon2" destination="tmh-pP-66H" id="Tog-Ec-8W5"/>
+                        <outlet property="icons1" destination="HGT-RN-f7Y" id="I0d-sw-fCT"/>
+                        <outlet property="itzelImagen" destination="JAo-zm-OfC" id="oyn-JU-GaB"/>
+                        <outlet property="itzelTexto" destination="svS-kY-r6r" id="LAD-St-Zti"/>
+                        <outlet property="logoHome" destination="3VR-qf-4IJ" id="Qil-Ye-u99"/>
+                        <outlet property="mantraText" destination="H4f-2d-Uei" id="O28-oD-iR8"/>
+                        <outlet property="mantraTitle" destination="YqJ-6p-a9O" id="eof-zQ-aKD"/>
+                        <outlet property="materialText" destination="ffw-XI-1s7" id="bFg-6J-iHK"/>
+                        <outlet property="materialTitle" destination="MW1-BG-NtP" id="uig-4T-KaU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oi7-Jq-YJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8903" y="-559"/>
+            <point key="canvasLocation" x="7679.7101449275369" y="766.74107142857144"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="kgC-HM-O9I">
+            <objects>
+                <viewController id="Mm9-Kk-dkU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ewY-Mz-Tmf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eiY-Gf-JeY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHa-BK-uBB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9749" y="-533"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="N7h-LZ-upQ">
             <objects>
                 <viewController id="fGi-0e-BeH" sceneMemberID="viewController">
@@ -541,11 +774,12 @@
                         <viewLayoutGuide key="safeArea" id="QI6-fn-7vI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="EZi-ZA-Gkc"/>
                     <navigationItem key="navigationItem" id="SxN-3u-4U4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zph-9N-g8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6805.7971014492759" y="-990.40178571428567"/>
+            <point key="canvasLocation" x="7680" y="1548"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hqg-mT-fsc">
@@ -570,9 +804,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6K-pQ-Tog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10487" y="-970"/>
+            <point key="canvasLocation" x="9748" y="-1279"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="Ig0-aA-s4h">
             <objects>
                 <viewController id="1yF-JC-tqX" sceneMemberID="viewController">
@@ -675,10 +909,27 @@
                         <viewLayoutGuide key="safeArea" id="TJ8-S2-Guk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zG8-1Y-tZH"/>
+                    <navigationItem key="navigationItem" id="9aS-58-7EI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYn-gj-j6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7681" y="-990"/>
+            <point key="canvasLocation" x="7680" y="2242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ejj-SN-IwB">
+            <objects>
+                <viewController id="Uod-LI-qoF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCX-ev-uSA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aIO-GF-xc2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKa-Nt-rb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8519" y="2242"/>
         </scene>
         <!--Courses-->
         <scene sceneID="cwR-0m-Hrr">
@@ -688,8 +939,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cursos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt7-qO-bru">
-                                <rect key="frame" x="161" y="86" width="92" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt7-qO-bru">
+                                <rect key="frame" x="153" y="86" width="108" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -699,7 +950,9 @@
                                 <rect key="frame" x="66" y="259" width="282" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curso 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8O-5B-28C">
                                 <rect key="frame" x="66" y="196" width="57" height="21"/>
@@ -720,7 +973,9 @@
                                 <rect key="frame" x="66" y="387" width="282" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curso 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sva-WD-hLH">
                                 <rect key="frame" x="66" y="324" width="60" height="21"/>
@@ -741,7 +996,9 @@
                                 <rect key="frame" x="66" y="515" width="282" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curso 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOr-kr-OU9">
                                 <rect key="frame" x="66" y="452" width="60" height="21"/>
@@ -788,7 +1045,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0N-Hf-Qrr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8903" y="183"/>
+            <point key="canvasLocation" x="8903" y="-533"/>
         </scene>
         <!--Mantra-->
         <scene sceneID="aoQ-hj-a9p">
@@ -799,30 +1056,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mantra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNa-XD-x8y">
-                                <rect key="frame" x="162" y="86" width="91" height="36"/>
+                                <rect key="frame" x="128" y="149" width="158" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="TitanOne" family="Titan One" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="K8T-Wi-Z6s">
-                                <rect key="frame" x="87" y="262" width="240" height="373"/>
+                                <rect key="frame" x="54" y="286" width="307" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</string>
+                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">"Being prepared is important, knowing how to wait for it is even more important, but taking advantage of the right moment is the key to life."</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="-Arthur Schnitzler" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="YYo-fE-uVY">
+                                <rect key="frame" x="54" y="562" width="307" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share-button-icon-template-arrow-icon-share-symbol-isolated-forward-vector" translatesAutoresizingMaskIntoConstraints="NO" id="fTU-9O-nua">
+                                <rect key="frame" x="326" y="49" width="68" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zl6-Xa-afs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mantra" image="heart.circle" catalog="system" selectedImage="heart.circle.fill" id="MaC-eL-pxz"/>
+                    <tabBarItem key="tabBarItem" title="Mantra" image="heart" catalog="system" selectedImage="heart.fill" id="MaC-eL-pxz"/>
+                    <navigationItem key="navigationItem" id="ISl-Fj-aux"/>
+                    <connections>
+                        <outlet property="authorText" destination="YYo-fE-uVY" id="38G-bH-l6e"/>
+                        <outlet property="mantraText" destination="K8T-Wi-Z6s" id="k8t-gM-cui"/>
+                        <outlet property="mantraTitle" destination="qNa-XD-x8y" id="ACO-9c-QOk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8y-gn-JJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8903" y="994"/>
+            <point key="canvasLocation" x="8902.898550724638" y="214.95535714285714"/>
         </scene>
         <!--Appointments-->
         <scene sceneID="4Iw-jy-C4m">
@@ -839,51 +1114,76 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="iFL-oJ-8HH">
-                                <rect key="frame" x="0.0" y="232" width="323" height="910"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">Welcome to the Itzel Arronte's app! Before using our app, we ask that you carefully read and agree to the following terms and conditions:
-
-Use of the App:
-a. By using our app, you acknowledge and agree that our app is for informational and educational purposes only and does not constitute medical or professional advice.
-b. You understand that the use of our app does not create a therapist-patient or teacher-student relationship.
-c. Our app does not replace professional treatment or advice from a licensed therapist or medical professional.
-d. You are responsible for your own well-being and use of the app. We are not responsible for any consequences that may result from your use of the app.
-Intellectual Property:
-a. All content and materials provided within our app, including but not limited to text, graphics, logos, images, and software, are owned by us or our licensors.
-b. You agree not to reproduce, distribute, modify, or create derivative works of any content or materials within the app without our prior written consent.
-User Conduct:
-a. You agree to use our app in compliance with all applicable laws and regulations.
-b. You agree not to use our app for any unlawful or prohibited purpose, including but not limited to spreading hate speech, infringing intellectual property rights, or sending spam.
-c. You agree not to interfere with or disrupt the operation of our app or any networks connected to it.
-Privacy:
-a. We respect your privacy and are committed to protecting your personal information. Please refer to our Privacy Policy for details on how we collect, use, and protect your information.
-Disclaimer of Warranties:
-a. Our app is provided "as is" without warranties of any kind, whether express or implied.
-b. We do not warrant that the app will meet your requirements or be uninterrupted, error-free, or secure.
-c. We are not responsible for the accuracy or completeness of any content or materials within the app.
-Limitation of Liability:
-a. To the extent permitted by law, we are not liable for any direct, indirect, incidental, special, or consequential damages arising from your use of the app or any content or materials within it.
-b. Our total liability to you for any claims arising from or related to the app is limited to the amount you paid to access the app.
-Governing Law:
-a. These terms and conditions shall be governed by and construed in accordance with the laws of [insert country/state].
-b. Any dispute arising from or related to the app shall be subject to the exclusive jurisdiction of the courts in [insert city].
-By using our app, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions. If you do not agree to these terms and conditions, you should not use our app.</mutableString>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nLo-C7-mhO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar.circle" catalog="system" selectedImage="calendar.circle.fill" id="D4j-pQ-UVx"/>
+                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar" catalog="system" selectedImage="calendar" id="D4j-pQ-UVx"/>
                     <navigationItem key="navigationItem" id="iDm-HQ-7IV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykg-Vs-6Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7762" y="994"/>
+            <point key="canvasLocation" x="8903" y="973"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G1Z-cT-zxL">
+            <objects>
+                <viewController id="tHs-N3-g93" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JWp-S0-Yjr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="W10-SJ-rqW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeR-Fg-iV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9713" y="973"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yg4-Ja-XP1">
+            <objects>
+                <viewController id="Ehx-7v-w3a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2es-EO-aUo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WZW-pj-4Je"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJa-KE-obB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10481" y="973"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YLj-Ed-F0k">
+            <objects>
+                <viewController id="g3N-Sz-QR5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rq9-cS-WL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cS9-vc-nHF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLY-ZY-DdK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11226" y="973"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hXl-nl-ZkG">
+            <objects>
+                <viewController id="q2H-pn-pYo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JUw-0v-K4f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hST-gF-UJ3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfR-JD-gd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11949" y="973"/>
         </scene>
         <!--Configuration-->
         <scene sceneID="sJl-rJ-wkM">
@@ -904,7 +1204,8 @@ By using our app, you acknowledge that you have read, understood, and agree to b
                         <viewLayoutGuide key="safeArea" id="fXm-9z-XBy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Configuration" image="pencil.circle" catalog="system" selectedImage="pencil.circle.fill" id="ZwE-8y-eRk"/>
+                    <tabBarItem key="tabBarItem" title="Configuration" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="ZwE-8y-eRk"/>
+                    <navigationItem key="navigationItem" id="D3A-G1-1oX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEo-U3-SqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -922,11 +1223,11 @@ By using our app, you acknowledge that you have read, understood, and agree to b
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="501-8t-IZY" kind="relationship" relationship="viewControllers" id="TkJ-Gp-mwy"/>
-                        <segue destination="mJc-Og-5gY" kind="relationship" relationship="viewControllers" id="QfB-6h-m71"/>
-                        <segue destination="LaE-Z4-I81" kind="relationship" relationship="viewControllers" id="pe5-tf-Lyd"/>
-                        <segue destination="uUJ-ps-OZd" kind="relationship" relationship="viewControllers" id="tE6-9d-lbz"/>
-                        <segue destination="Sbt-7w-6Hd" kind="relationship" relationship="viewControllers" id="OKd-rm-SNj"/>
+                        <segue destination="501-8t-IZY" kind="relationship" relationship="viewControllers" id="zVP-BN-4aw"/>
+                        <segue destination="mJc-Og-5gY" kind="relationship" relationship="viewControllers" id="afh-0t-fYu"/>
+                        <segue destination="LaE-Z4-I81" kind="relationship" relationship="viewControllers" id="Ovp-IV-btl"/>
+                        <segue destination="uUJ-ps-OZd" kind="relationship" relationship="viewControllers" id="cvU-14-soo"/>
+                        <segue destination="Sbt-7w-6Hd" kind="relationship" relationship="viewControllers" id="tYT-AU-q0u"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rce-aw-Qhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -952,18 +1253,27 @@ By using our app, you acknowledge that you have read, understood, and agree to b
             <point key="canvasLocation" x="3614.4927536231885" y="63.616071428571423"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sH8-Sl-HWH"/>
+        <segue reference="P98-FO-jSF"/>
+        <segue reference="lem-JF-vnQ"/>
+        <segue reference="Z0L-V2-wFh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Captura de Pantalla 2023-04-28 a la(s) 6.55.46 p.m." width="1173" height="626"/>
+        <image name="Circle_(transparent)-2" width="800" height="800"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
-        <image name="calendar.circle" catalog="system" width="128" height="121"/>
-        <image name="calendar.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="heart.circle" catalog="system" width="128" height="121"/>
-        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="pencil.circle" catalog="system" width="128" height="121"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="iconos-de-redes-sociales-redondos-o-logos-conjunto-vectores-planos-colección-para-aplicaciones-y-sitios-web-vector-166025736" width="159" height="159"/>
+        <image name="iconos-redes-sociales-diseno-ilustracion-vectorial_1035-13962" width="625" height="131"/>
+        <image name="share-button-icon-template-arrow-icon-share-symbol-isolated-forward-vector" width="746" height="728"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

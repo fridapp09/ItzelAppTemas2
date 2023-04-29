@@ -9,6 +9,12 @@ import UIKit
 
 class MantraViewController: UIViewController {
 
+    @IBOutlet weak var mantraTitle: UILabel!
+    
+    @IBOutlet weak var mantraText: UITextView!
+    
+    @IBOutlet weak var authorText: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
