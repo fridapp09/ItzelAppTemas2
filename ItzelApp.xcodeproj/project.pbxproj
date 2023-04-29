@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3663806A29FCA4D700F56A99 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3663806929FCA4D600F56A99 /* Fonts */; };
 		A84049A129E5FA0700D684C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84049A029E5FA0700D684C2 /* AppDelegate.swift */; };
 		A84049A329E5FA0700D684C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84049A229E5FA0700D684C2 /* SceneDelegate.swift */; };
 		A84049A529E5FA0700D684C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84049A429E5FA0700D684C2 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3663806929FCA4D600F56A99 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../../../Downloads/Fonts; sourceTree = "<group>"; };
 		A840499D29E5FA0700D684C2 /* ItzelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItzelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84049A029E5FA0700D684C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84049A229E5FA0700D684C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				A84049B629E5FD7300D684C2 /* SignUpViewController.swift */,
 				A84049B429E5FC2E00D684C2 /* LogInViewController.swift */,
 				A84049A929E5FA0900D684C2 /* Assets.xcassets */,
+				3663806929FCA4D600F56A99 /* Fonts */,
 				A84049AB29E5FA0900D684C2 /* LaunchScreen.storyboard */,
 				A84049AE29E5FA0900D684C2 /* Info.plist */,
 			);
@@ -149,6 +152,7 @@
 				A84049AD29E5FA0900D684C2 /* LaunchScreen.storyboard in Resources */,
 				A84049AA29E5FA0900D684C2 /* Assets.xcassets in Resources */,
 				A84049A829E5FA0700D684C2 /* Main.storyboard in Resources */,
+				3663806A29FCA4D700F56A99 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

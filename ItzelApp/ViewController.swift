@@ -8,8 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var logoTitle: UILabel!
+    
+    @IBOutlet weak var logoImagen: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
