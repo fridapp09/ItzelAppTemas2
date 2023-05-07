@@ -1053,7 +1053,7 @@ By using our app, you acknowledge that you have read, understood, and agree to b
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="-Zig Ziglar" textAlignment="right" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8w6-pH-3xu">
-                                <rect key="frame" x="36" y="517" width="342" height="48"/>
+                                <rect key="frame" x="36" y="518" width="342" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89105617000000004" green="1" blue="0.89477708739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor"/>
