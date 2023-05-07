@@ -1238,10 +1238,10 @@ By using our app, you acknowledge that you have read, understood, and agree to b
             </objects>
             <point key="canvasLocation" x="9711.5942028985519" y="972.99107142857133"/>
         </scene>
-        <!--View Controller-->
+        <!--New Appointment View Controller-->
         <scene sceneID="Yg4-Ja-XP1">
             <objects>
-                <viewController id="Ehx-7v-w3a" sceneMemberID="viewController">
+                <viewController id="Ehx-7v-w3a" customClass="NewAppointmentViewController" customModule="ItzelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2es-EO-aUo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1314,10 +1314,10 @@ By using our app, you acknowledge that you have read, understood, and agree to b
             </objects>
             <point key="canvasLocation" x="10479.710144927538" y="972.99107142857133"/>
         </scene>
-        <!--View Controller-->
+        <!--Reschedule Appointment View Controller-->
         <scene sceneID="YLj-Ed-F0k">
             <objects>
-                <viewController id="g3N-Sz-QR5" sceneMemberID="viewController">
+                <viewController id="g3N-Sz-QR5" customClass="RescheduleAppointmentViewController" customModule="ItzelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rq9-cS-WL6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1366,10 +1366,10 @@ By using our app, you acknowledge that you have read, understood, and agree to b
             </objects>
             <point key="canvasLocation" x="11226" y="973"/>
         </scene>
-        <!--View Controller-->
+        <!--Cancel Appointment View Controller-->
         <scene sceneID="hXl-nl-ZkG">
             <objects>
-                <viewController id="q2H-pn-pYo" sceneMemberID="viewController">
+                <viewController id="q2H-pn-pYo" customClass="CancelAppointmentViewController" customModule="ItzelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JUw-0v-K4f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

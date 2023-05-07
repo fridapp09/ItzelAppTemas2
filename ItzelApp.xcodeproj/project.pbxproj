@@ -13,6 +13,9 @@
 		3687AAA22A075B9B0053760B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3687AAA12A075B9B0053760B /* CalendarViewController.swift */; };
 		3687AAA42A075BA80053760B /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3687AAA32A075BA80053760B /* AppointmentsViewController.swift */; };
 		3687AAA62A07731C0053760B /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3687AAA52A07731C0053760B /* MaterialsViewController.swift */; };
+		36B038282A07FDFD00C3893A /* NewAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B038272A07FDFD00C3893A /* NewAppointmentViewController.swift */; };
+		36B0382A2A07FE0C00C3893A /* CancelAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B038292A07FE0C00C3893A /* CancelAppointmentViewController.swift */; };
+		36B0382C2A07FE1E00C3893A /* RescheduleAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B0382B2A07FE1E00C3893A /* RescheduleAppointmentViewController.swift */; };
 		A84049A129E5FA0700D684C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84049A029E5FA0700D684C2 /* AppDelegate.swift */; };
 		A84049A329E5FA0700D684C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84049A229E5FA0700D684C2 /* SceneDelegate.swift */; };
 		A84049A529E5FA0700D684C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84049A429E5FA0700D684C2 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 		3687AAA12A075B9B0053760B /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3687AAA32A075BA80053760B /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		3687AAA52A07731C0053760B /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
+		36B038272A07FDFD00C3893A /* NewAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppointmentViewController.swift; sourceTree = "<group>"; };
+		36B038292A07FE0C00C3893A /* CancelAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAppointmentViewController.swift; sourceTree = "<group>"; };
+		36B0382B2A07FE1E00C3893A /* RescheduleAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RescheduleAppointmentViewController.swift; sourceTree = "<group>"; };
 		A840499D29E5FA0700D684C2 /* ItzelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItzelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84049A029E5FA0700D684C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84049A229E5FA0700D684C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				A84049A229E5FA0700D684C2 /* SceneDelegate.swift */,
 				A84049A429E5FA0700D684C2 /* ViewController.swift */,
 				A84049A629E5FA0700D684C2 /* Main.storyboard */,
+				36B038272A07FDFD00C3893A /* NewAppointmentViewController.swift */,
+				36B038292A07FE0C00C3893A /* CancelAppointmentViewController.swift */,
+				36B0382B2A07FE1E00C3893A /* RescheduleAppointmentViewController.swift */,
 				3687AAA52A07731C0053760B /* MaterialsViewController.swift */,
 				3687AA9F2A075B8F0053760B /* SettingsViewController.swift */,
 				3687AAA12A075B9B0053760B /* CalendarViewController.swift */,
@@ -198,6 +207,8 @@
 				3687AAA22A075B9B0053760B /* CalendarViewController.swift in Sources */,
 				A84049B529E5FC2E00D684C2 /* LogInViewController.swift in Sources */,
 				A84049A529E5FA0700D684C2 /* ViewController.swift in Sources */,
+				36B038282A07FDFD00C3893A /* NewAppointmentViewController.swift in Sources */,
+				36B0382A2A07FE0C00C3893A /* CancelAppointmentViewController.swift in Sources */,
 				3687AAA62A07731C0053760B /* MaterialsViewController.swift in Sources */,
 				3687AAA02A075B8F0053760B /* SettingsViewController.swift in Sources */,
 				A84049B929E5FFB700D684C2 /* HomepageViewController.swift in Sources */,
@@ -206,6 +217,7 @@
 				A84049A129E5FA0700D684C2 /* AppDelegate.swift in Sources */,
 				A8CB73AE29E75AD700791169 /* CursosViewController.swift in Sources */,
 				A84049A329E5FA0700D684C2 /* SceneDelegate.swift in Sources */,
+				36B0382C2A07FE1E00C3893A /* RescheduleAppointmentViewController.swift in Sources */,
 				A84049B729E5FD7300D684C2 /* SignUpViewController.swift in Sources */,
 				A8CB73AC29E7599E00791169 /* NewProfileViewController.swift in Sources */,
 				A8CB73B029E75AE600791169 /* MantraViewController.swift in Sources */,
